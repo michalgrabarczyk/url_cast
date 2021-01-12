@@ -1,0 +1,10 @@
+[Unit]
+Description=Repeatedily casts urls to Chromecast
+
+[Service]
+Environment=PYTHONUNBUFFERED=1
+Restart=always
+ExecStart=/usr/bin/python3 /home/pi/url_cast/url_cast.py
+
+[Install]
+WantedBy=default.target
